@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "name": "ROAD",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "state": {},
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [51.339596807956696, 35.69927897936867],
+            [51.33989721536636, 35.69957739186134],
+            [51.34007155895233, 35.69965798482475],
+            [51.340259313583374, 35.69968847943832],
+            [51.344601809978485, 35.69979738867727],
+            [51.34776413440704, 35.69990194140671],
+            [51.34857952594757, 35.69988669414222],
+            [51.350440979003906, 35.69993025774737]
+          ],
+          [
+            [51.350440979003906, 35.70008926470412],
+            [51.34393662214279, 35.69994768318276],
+            [51.343762278556824, 35.69998689039846],
+            [51.343357264995575, 35.6999847122203],
+            [51.340237855911255, 35.69989540686514],
+            [51.34006351232529, 35.699938970465524],
+            [51.33989721536636, 35.70001085035412],
+            [51.33973628282547, 35.700104511929894],
+            [51.33957266807556, 35.700230845974104]
+          ]
+        ]
+      },
+      "properties": {
+        "surface": "paved",
+        "name_ru": "улица Азади",
+        "iso_3166_1": "IR",
+        "len": 2310,
+        "iso_3166_2": "IR-07",
+        "type": "primary",
+        "structure": "none",
+        "oneway": "true",
+        "name_en": "Azadi St",
+        "name_script": "Arabic",
+        "shield_text_color": "black",
+        "ref": "146",
+        "reflen": 3,
+        "shield": "default",
+        "class": "primary",
+        "name": "خیابان آزادی",
+        "lineWidth": ["interpolate", ["exponential", 1.5], ["zoom"], 3, 0.8, 18, 28, 22, 280]
+      },
+      "id": 4551093451,
+      "layer": {
+        "id": "road-primary",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road",
+        "metadata": { "mapbox:featureComponent": "road-network", "mapbox:group": "Road network, surface" },
+        "minzoom": 6,
+        "filter": ["all", ["==", ["get", "class"], "primary"], ["match", ["get", "structure"], ["none", "ford"], true, false], ["==", ["geometry-type"], "LineString"]],
+        "layout": { "line-cap": "round", "line-join": "round" },
+        "paint": { "line-width": 12.181277002808496, "line-color": { "r": 0.9490196078431372, "g": 0.9490196078431372, "b": 0.9490196078431372, "a": 1 } }
+      },
+      "source": "composite",
+      "sourceLayer": "road"
+    },
+    {
+      "type": "Feature",
+      "state": {},
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [51.36080503463745, 35.700191638878366],
+            [51.365439891815186, 35.70027440939121],
+            [51.37275695800781, 35.700461731813576]
+          ],
+          [
+            [51.37275695800781, 35.70061420322783],
+            [51.362950801849365, 35.70040509949975],
+            [51.36079430580139, 35.700326685460325]
+          ],
+          [
+            [51.35880410671234, 35.70027440939121],
+            [51.34941101074219, 35.70006530477201]
+          ],
+          [
+            [51.34941101074219, 35.69990411958712],
+            [51.35439455509186, 35.70000431582146],
+            [51.35465741157532, 35.70005223571512],
+            [51.35880947113037, 35.70014807541604]
+          ]
+        ]
+      },
+      "properties": {
+        "surface": "paved",
+        "name_ru": "улица Азади",
+        "iso_3166_1": "IR",
+        "len": 5530,
+        "iso_3166_2": "IR-07",
+        "type": "primary",
+        "structure": "none",
+        "oneway": "true",
+        "name_en": "Azadi St",
+        "name_script": "Arabic",
+        "shield_text_color": "black",
+        "ref": "146",
+        "reflen": 3,
+        "shield": "default",
+        "class": "primary",
+        "name": "خیابان آزادی",
+        "lineWidth": ["interpolate", ["exponential", 1.5], ["zoom"], 3, 0.8, 18, 28, 22, 280]
+      },
+      "layer": {
+        "id": "road-primary",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road",
+        "metadata": { "mapbox:featureComponent": "road-network", "mapbox:group": "Road network, surface" },
+        "minzoom": 6,
+        "filter": ["all", ["==", ["get", "class"], "primary"], ["match", ["get", "structure"], ["none", "ford"], true, false], ["==", ["geometry-type"], "LineString"]],
+        "layout": { "line-cap": "round", "line-join": "round" },
+        "paint": { "line-width": 8.474924313925703, "line-color": { "r": 0.9490196078431372, "g": 0.9490196078431372, "b": 0.9490196078431372, "a": 1 } }
+      },
+      "source": "composite",
+      "sourceLayer": "road"
+    }
+  ]
+}

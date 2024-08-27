@@ -1,0 +1,61 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import { useMapboxContext } from "@/Contexts/MapboxContext/MapboxContext";
+const StreetExporter = () => {
+  const [selectedRoads, setSelectedRoads] = useState([]);
+  const { mapRef } = useMapboxContext();
+  useEffect(() => {
+    if (!mapRef.current) return;
+    const map = mapRef.current;
+    map.on("click", (e) => {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ["road-primary"], // replace with your layer name
+      });
+
+      if (!features.length) {
+        return;
+      }
+
+      if (features[0].layer.id === "road-primary") {
+        // Get the line width of the clicked road
+        var lineWidth = map.getPaintProperty("road-primary", "line-width");
+
+        if (features[0].geometry.coordinates.length > 0) {
+          // Generate a unique id for the layer using a timestamp
+          var id = "selected-road-" + Date.now();
+
+          map.addLayer({
+            id: id,
+            type: "line",
+            source: {
+              type: "geojson",
+              data: features[0].toJSON(),
+            },
+            paint: {
+              "line-color": "#FF0000", // set color to red
+              "line-width": lineWidth,
+            },
+          });
+          setSelectedRoads((prevRoads) => [...prevRoads, { ...features[0].toJSON(), properties: { ...features[0].properties, lineWidth: lineWidth } }]);
+        }
+      }
+    });
+  }, []);
+
+  const exportSelectedRoads = () => {
+    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(selectedRoads));
+    var downloadAnchorNode = document.createElement("a");
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", "selected_roads.json");
+    document.body.appendChild(downloadAnchorNode); // required for firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+  };
+
+  return (
+    <div onClick={() => exportSelectedRoads()} className="fixed btn bottom-10 left-10">
+      Export
+    </div>
+  );
+};
+export default StreetExporter;

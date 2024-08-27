@@ -1,0 +1,341 @@
+{
+  "type": "FeatureCollection",
+  "name": "ROAD",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "state": {},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [51.41069412231445, 35.68608999236527],
+          [51.41067400574684, 35.68609217092292],
+          [51.41058549284935, 35.68609979587423],
+          [51.40970304608345, 35.68620545583873],
+          [51.40947237610817, 35.68623268776567],
+          [51.40901505947113, 35.686286062315475],
+          [51.408918499946594, 35.686298044352384],
+          [51.408666372299194, 35.68632745479894],
+          [51.408052146434784, 35.68639934695598],
+          [51.40782684087753, 35.68642657881671],
+          [51.407378911972046, 35.68647886396329],
+          [51.40676066279411, 35.6865507559839],
+          [51.4061638712883, 35.6866226479397],
+          [51.405388712882996, 35.686713057428506],
+          [51.40485763549805, 35.68677732435222]
+        ]
+      },
+      "properties": {
+        "surface": "paved",
+        "name_ru": "проспект Имама Хомейни",
+        "iso_3166_1": "IR",
+        "len": 1040,
+        "iso_3166_2": "IR-07",
+        "type": "primary",
+        "structure": "none",
+        "oneway": "true",
+        "name_en": "Emam Khomeini St",
+        "name_script": "Arabic",
+        "shield_text_color": "black",
+        "ref": "226",
+        "reflen": 3,
+        "shield": "default",
+        "class": "primary",
+        "name": "خیابان امام خمینی",
+        "lineWidth": ["interpolate", ["exponential", 1.5], ["zoom"], 3, 0.8, 18, 28, 22, 280]
+      },
+      "id": 6923659521,
+      "layer": {
+        "id": "road-primary",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road",
+        "metadata": { "mapbox:featureComponent": "road-network", "mapbox:group": "Road network, surface" },
+        "minzoom": 6,
+        "filter": ["all", ["==", ["get", "class"], "primary"], ["match", ["get", "structure"], ["none", "ford"], true, false], ["==", ["geometry-type"], "LineString"]],
+        "layout": { "line-cap": "round", "line-join": "round" },
+        "paint": { "line-width": 280, "line-color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+      },
+      "source": "composite",
+      "sourceLayer": "road"
+    },
+    {
+      "type": "Feature",
+      "state": {},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [51.40520095825195, 35.686735932102195],
+          [51.40475437045097, 35.68678930631532],
+          [51.40416830778122, 35.686861198056135],
+          [51.402809768915176, 35.68701696327233],
+          [51.40273600816727, 35.68702567740131],
+          [51.40265956521034, 35.68703439152935],
+          [51.40255227684975, 35.68704746271963],
+          [51.4006532728672, 35.68727947599044],
+          [51.39936447143555, 35.687429794087365]
+        ]
+      },
+      "properties": {
+        "surface": "paved",
+        "name_ru": "проспект Имама Хомейни",
+        "iso_3166_1": "IR",
+        "len": 1500,
+        "iso_3166_2": "IR-07",
+        "type": "primary",
+        "structure": "none",
+        "oneway": "true",
+        "name_en": "Emam Khomeini St",
+        "name_script": "Arabic",
+        "shield_text_color": "black",
+        "ref": "226",
+        "reflen": 3,
+        "shield": "default",
+        "class": "primary",
+        "name": "خیابان امام خمینی",
+        "lineWidth": ["interpolate", ["exponential", 1.5], ["zoom"], 3, 0.8, 18, 28, 22, 280]
+      },
+      "id": 6923659561,
+      "layer": {
+        "id": "road-primary",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road",
+        "metadata": { "mapbox:featureComponent": "road-network", "mapbox:group": "Road network, surface" },
+        "minzoom": 6,
+        "filter": ["all", ["==", ["get", "class"], "primary"], ["match", ["get", "structure"], ["none", "ford"], true, false], ["==", ["geometry-type"], "LineString"]],
+        "layout": { "line-cap": "round", "line-join": "round" },
+        "paint": { "line-width": 34.12536930421494, "line-color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+      },
+      "source": "composite",
+      "sourceLayer": "road"
+    },
+    {
+      "type": "Feature",
+      "state": {},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [51.40217944979668, 35.68393210180001],
+          [51.4022022485733, 35.68406390799582],
+          [51.40227735042572, 35.68447457549074],
+          [51.40233099460602, 35.68477957915874],
+          [51.40237659215927, 35.68503229560034],
+          [51.402436941862106, 35.68536452935942],
+          [51.40245974063873, 35.685494154614815],
+          [51.40258178114891, 35.686166241847616],
+          [51.402597874403, 35.68626100895982],
+          [51.40271186828613, 35.68689060829509],
+          [51.40272527933121, 35.686963589211544],
+          [51.40273600816727, 35.68702567740131],
+          [51.402753442525864, 35.68713460393333],
+          [51.402973383665085, 35.68845913866181],
+          [51.403009593486786, 35.688672630688174]
+        ]
+      },
+      "properties": {
+        "surface": "paved",
+        "name_ru": "улица Вали-Аср",
+        "iso_3166_1": "IR",
+        "len": 1550,
+        "iso_3166_2": "IR-07",
+        "type": "primary",
+        "structure": "none",
+        "oneway": "true",
+        "name_en": "Valiasr St",
+        "name_script": "Arabic",
+        "shield_text_color": "black",
+        "ref": "175",
+        "reflen": 3,
+        "shield": "default",
+        "class": "primary",
+        "name": "ولی عصر",
+        "lineWidth": ["interpolate", ["exponential", 1.5], ["zoom"], 3, 0.8, 18, 28, 22, 280]
+      },
+      "id": 6923659541,
+      "layer": {
+        "id": "road-primary",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road",
+        "metadata": { "mapbox:featureComponent": "road-network", "mapbox:group": "Road network, surface" },
+        "minzoom": 6,
+        "filter": ["all", ["==", ["get", "class"], "primary"], ["match", ["get", "structure"], ["none", "ford"], true, false], ["==", ["geometry-type"], "LineString"]],
+        "layout": { "line-cap": "round", "line-join": "round" },
+        "paint": { "line-width": 16.09329605957714, "line-color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+      },
+      "source": "composite",
+      "sourceLayer": "road"
+    },
+    {
+      "type": "Feature",
+      "state": {},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [51.402962654829025, 35.68839378384561],
+          [51.402973383665085, 35.68845913866181],
+          [51.40315309166908, 35.68951243306371],
+          [51.403204053640366, 35.689809792874755],
+          [51.40328720211983, 35.690284694889414],
+          [51.403356939554214, 35.69068225976869],
+          [51.40335962176323, 35.69069424114524],
+          [51.40339449048042, 35.69088812135212],
+          [51.40344813466072, 35.691195278917405],
+          [51.403497755527496, 35.69148065119818],
+          [51.40350982546806, 35.69154600348523],
+          [51.40357553958893, 35.69197297044278],
+          [51.403588950634, 35.69205901707841],
+          [51.4036063849926, 35.69214942040571],
+          [51.40367344021797, 35.69250231916054],
+          [51.403787434101105, 35.69313404759997]
+        ]
+      },
+      "properties": {
+        "surface": "paved",
+        "name_ru": "улица Вали-Аср",
+        "iso_3166_1": "IR",
+        "len": 940,
+        "iso_3166_2": "IR-07",
+        "type": "primary",
+        "structure": "none",
+        "oneway": "true",
+        "name_en": "Valiasr St",
+        "name_script": "Arabic",
+        "shield_text_color": "black",
+        "ref": "175",
+        "reflen": 3,
+        "shield": "default",
+        "class": "primary",
+        "name": "ولی عصر",
+        "lineWidth": ["interpolate", ["exponential", 1.5], ["zoom"], 3, 0.8, 18, 28, 22, 280]
+      },
+      "id": 6923659541,
+      "layer": {
+        "id": "road-primary",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road",
+        "metadata": { "mapbox:featureComponent": "road-network", "mapbox:group": "Road network, surface" },
+        "minzoom": 6,
+        "filter": ["all", ["==", ["get", "class"], "primary"], ["match", ["get", "structure"], ["none", "ford"], true, false], ["==", ["geometry-type"], "LineString"]],
+        "layout": { "line-cap": "round", "line-join": "round" },
+        "paint": { "line-width": 14.416057333841232, "line-color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+      },
+      "source": "composite",
+      "sourceLayer": "road"
+    },
+    {
+      "type": "Feature",
+      "state": {},
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [51.40422463417053, 35.69556833367403],
+            [51.40424340963364, 35.69567724854025],
+            [51.40431448817253, 35.696090034533114],
+            [51.40446200966835, 35.696936293595314],
+            [51.40457600355148, 35.69759521496056]
+          ],
+          [
+            [51.40373647212982, 35.692855216353934],
+            [51.40380084514618, 35.69321246871229],
+            [51.40388265252113, 35.69365467520785],
+            [51.40393629670143, 35.693977070516354],
+            [51.4039845764637, 35.694225401149225],
+            [51.40400066971779, 35.694325604518966],
+            [51.404055655002594, 35.69460660894953],
+            [51.40412136912346, 35.694937713674506],
+            [51.404201835393906, 35.69542238752004],
+            [51.40421122312546, 35.69548446912566]
+          ]
+        ]
+      },
+      "properties": {
+        "surface": "paved",
+        "name_ru": "улица Вали-Аср",
+        "iso_3166_1": "IR",
+        "len": 1570,
+        "iso_3166_2": "IR-07",
+        "type": "primary",
+        "structure": "none",
+        "oneway": "true",
+        "name_en": "Valiasr St",
+        "name_script": "Arabic",
+        "shield_text_color": "black",
+        "ref": "175",
+        "reflen": 3,
+        "shield": "default",
+        "class": "primary",
+        "name": "ولی عصر",
+        "lineWidth": ["interpolate", ["exponential", 1.5], ["zoom"], 3, 0.8, 18, 28, 22, 280]
+      },
+      "id": 8788362831,
+      "layer": {
+        "id": "road-primary",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road",
+        "metadata": { "mapbox:featureComponent": "road-network", "mapbox:group": "Road network, surface" },
+        "minzoom": 6,
+        "filter": ["all", ["==", ["get", "class"], "primary"], ["match", ["get", "structure"], ["none", "ford"], true, false], ["==", ["geometry-type"], "LineString"]],
+        "layout": { "line-cap": "round", "line-join": "round" },
+        "paint": { "line-width": 14.416057333841232, "line-color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+      },
+      "source": "composite",
+      "sourceLayer": "road"
+    },
+    {
+      "type": "Feature",
+      "state": {},
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [51.40422463417053, 35.695569422823425],
+            [51.40536993741989, 35.702195532416496]
+          ],
+          [
+            [51.40370965003967, 35.69271580036535],
+            [51.40421122312546, 35.69548446912566]
+          ]
+        ]
+      },
+      "properties": {
+        "surface": "paved",
+        "name_ru": "улица Вали-Аср",
+        "iso_3166_1": "IR",
+        "len": 2160,
+        "iso_3166_2": "IR-07",
+        "type": "primary",
+        "structure": "none",
+        "oneway": "true",
+        "name_en": "Valiasr St",
+        "name_script": "Arabic",
+        "shield_text_color": "black",
+        "ref": "175",
+        "reflen": 3,
+        "shield": "default",
+        "class": "primary",
+        "name": "ولی عصر",
+        "lineWidth": ["interpolate", ["exponential", 1.5], ["zoom"], 3, 0.8, 18, 28, 22, 280]
+      },
+      "id": 8788362831,
+      "layer": {
+        "id": "road-primary",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road",
+        "metadata": { "mapbox:featureComponent": "road-network", "mapbox:group": "Road network, surface" },
+        "minzoom": 6,
+        "filter": ["all", ["==", ["get", "class"], "primary"], ["match", ["get", "structure"], ["none", "ford"], true, false], ["==", ["geometry-type"], "LineString"]],
+        "layout": { "line-cap": "round", "line-join": "round" },
+        "paint": { "line-width": 9.167702895002831, "line-color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+      },
+      "source": "composite",
+      "sourceLayer": "road"
+    }
+  ]
+}
